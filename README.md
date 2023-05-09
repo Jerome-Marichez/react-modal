@@ -47,7 +47,7 @@ The Modal Component accepts the following props:
 | `modalRadius`      | `string`                  | `"8px"` | An optional parameter to set the border radius of the modal.                                                                             |
 | `modalBackground`  | `string`                  | `"#FFF"` | An optional parameter to set the CSS background property of the modal.                                                                   |
 | `modalShadow`      | `string`                  | `"0 0 10px #000"` | An optional parameter to set the CSS box-shadow property of the modal.                                                            |
-| `modalMinWidth`    | `string`                  | `"500px"` | An optional parameter to set the min-width property of the modal.                                                                        |
+| `modalMinWidth`    | `string`                  | `null` | An optional parameter to set the min-width property of the modal.                                                                        |
 
 ## Examples
 
