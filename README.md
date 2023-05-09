@@ -47,18 +47,17 @@ The Modal Component accepts the following props:
 | `modalRadius`      | `string`                  | `"8px"` | An optional parameter to set the border radius of the modal.                                                                             |
 | `modalBackground`  | `string`                  | `"#FFF"` | An optional parameter to set the CSS background property of the modal.                                                                   |
 | `modalShadow`      | `string`                  | `"0 0 10px #000"` | An optional parameter to set the CSS box-shadow property of the modal.                                                            |
-| `modalMaxWidth`    | `string`                  | `"500px"` | An optional parameter to set the max-width property of the modal.                                                                        |
+| `modalMinWidth`    | `string`                  | `"500px"` | An optional parameter to set the min-width property of the modal.                                                                        |
 
 ## Examples
 
 ### Basic example
 
 ```javascript
-const [modalText, setModalText] = useState("");
 const [modalOpen, setModalOpen] = useState(false);
 
 <Modal isOpen={modalOpen}
-       contentBody={modalText}
+       contentBody={"This is a text"}
        onClose={() => { setModalOpen(false); }}
 />
 ```
@@ -68,9 +67,16 @@ const [modalOpen, setModalOpen] = useState(false);
 ```javascript
 const [modalOpen, setModalOpen] = useState(false);
 
-<Modal isOpen={modalOpen}
-       contentHeader={<div className="modal-line">Modal Title</div>}
-       contentBody={<div className="modal-line">This is a Body</div>}
-       contentFooter={<div className="modal-line">This is a footer</div>}
-       modalAlign="top"
-       backgroundColor="rgba(200, 200, 200, 0.5
+  <Modal isOpen={modalOpen}
+        contentHeader={<div className="modal-line">Modal Title</div>}
+        contentBody={<div className="modal-line">This is a Body</div>}
+        contentFooter={<div className="modal-line">This is a footer</div>}
+        modalAlign="top"
+        backgroundColor="rgba(200, 200, 200, 0.5)"
+        modalBackground="grey"
+        modalShadow="0 0 15px grey"
+        modalMinWidth="190px"
+        modalRadius="300px"
+        onClose={() => { setModalOpen(false); }}
+      />
+ ```
