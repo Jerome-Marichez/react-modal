@@ -10,7 +10,7 @@ The modal has been thoroughly tested manually and with Jest tests, achieving gre
 You can install the Modal Component package from npm:
 
 ```
-npm install @jerome/react-modal
+npm install jerome-react-modal
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ npm install @jerome/react-modal
 Import the Modal Component in your React project:
 
 ```javascript
-import Modal from "@jerome/react-modal";
+import Modal from "jerome-react-modal";
 ```
 
 Add the Modal Component to your component's render method:
