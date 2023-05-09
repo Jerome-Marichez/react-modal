@@ -52,9 +52,9 @@ The Modal Component accepts the following props:
 ## Examples
 
 ### Basic example
-
+<img src="https://github.com/Jerome-Marichez/react-modal/blob/main/example1.jpg"/>
 ```javascript
-const [modalOpen, setModalOpen] = useState(false);
+const [modalOpen, setModalOpen] = useState(true);
 
 <Modal isOpen={modalOpen}
        contentBody={"This is a text"}
@@ -63,9 +63,9 @@ const [modalOpen, setModalOpen] = useState(false);
 ```
 
 ### Customized example
-
+<img src="https://github.com/Jerome-Marichez/react-modal/blob/main/example2.jpg"/>
 ```javascript
-const [modalOpen, setModalOpen] = useState(false);
+const [modalOpen, setModalOpen] = useState(true);
 
   <Modal isOpen={modalOpen}
         contentHeader={<div className="modal-line">Modal Title</div>}
