@@ -52,7 +52,9 @@ The Modal Component accepts the following props:
 ## Examples
 
 ### Basic example
-<img src="https://github.com/Jerome-Marichez/react-modal/blob/main/example1.jpg"/>
+
+<img src="https://github.com/Jerome-Marichez/react-modal/blob/main/example1.jpg">
+
 ```javascript
 const [modalOpen, setModalOpen] = useState(true);
 
@@ -63,7 +65,9 @@ const [modalOpen, setModalOpen] = useState(true);
 ```
 
 ### Customized example
-<img src="https://github.com/Jerome-Marichez/react-modal/blob/main/example2.jpg"/>
+
+<img src="https://github.com/Jerome-Marichez/react-modal/blob/main/example2.jpg">
+
 ```javascript
 const [modalOpen, setModalOpen] = useState(true);
 
