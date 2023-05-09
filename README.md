@@ -1,6 +1,4 @@
-
-
-# Modal Component
+# React Modal Component
 
 A customizable and reusable React modal component with several options for displaying content and styling.
 The modal has been thoroughly tested manually and with Jest tests, achieving great coverage. Therefore, it is considered stable.
@@ -18,7 +16,7 @@ npm install jerome-react-modal
 Import the Modal Component in your React project:
 
 ```javascript
-import Modal from "jerome-react-modal";
+import { Modal } from "jerome-react-modal";
 ```
 
 Add the Modal Component to your component's render method:

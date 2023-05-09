@@ -1,6 +1,6 @@
 import "./Modal.css";
 import React from "react";
-interface ModalProps {
+export interface ModalProps {
     isOpen: boolean;
     contentBody: string | JSX.Element;
     onClose: () => void;
