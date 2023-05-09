@@ -12,7 +12,7 @@ interface ModalProps {
     modalRadius?: string;
     modalBackground?: string;
     modalShadow?: string;
-    modalMaxWidth?: string;
+    modalMinWidth?: string;
 }
 /**
  *
@@ -27,7 +27,7 @@ interface ModalProps {
  * @param modalRadius A optional parameter to set radius of Modal Form (ex: "8px")
  * @param modalBackground A optional parameter to set css background propriety (ex: "grey")
  * @param modalShadow A optional parameter to set box-shadow propriety (ex: "0 0 10px #000")
- * @param modalMaxWidth A optional parameter to set max-width propriety of modal (ex: "500px")
+ * @param modalMinWidth A optional parameter to set min-width propriety of modal (ex: "500px")
  * @returns A Modal with his content
  */
 declare function Modal(props: ModalProps): JSX.Element;

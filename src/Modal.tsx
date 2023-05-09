@@ -15,7 +15,7 @@ interface ModalProps {
 	modalRadius?: string;
 	modalBackground?: string;
 	modalShadow?: string;
-	modalMaxWidth?: string;
+	modalMinWidth?: string;
 }
 
 /**
@@ -31,7 +31,7 @@ interface ModalProps {
  * @param modalRadius A optional parameter to set radius of Modal Form (ex: "8px")
  * @param modalBackground A optional parameter to set css background propriety (ex: "grey")
  * @param modalShadow A optional parameter to set box-shadow propriety (ex: "0 0 10px #000")
- * @param modalMaxWidth A optional parameter to set max-width propriety of modal (ex: "500px")
+ * @param modalMinWidth A optional parameter to set min-width propriety of modal (ex: "500px")
  * @returns A Modal with his content
  */
 
@@ -39,7 +39,7 @@ function Modal(props: ModalProps): JSX.Element {
 
 	const { isOpen, contentBody, onClose } = props; // Minimal Props
 	const { closeButton, contentFooter, contentHeader } = props; // Custom JSX.Element Props
-	const { background, modalAlign, modalRadius, modalBackground, modalShadow, modalMaxWidth } = props; // CSS Custom Propriety 
+	const { background, modalAlign, modalRadius, modalBackground, modalShadow, modalMinWidth } = props; // CSS Custom Propriety 
 
 	return (
 		<div data-testid="blocker" className="blocker" style={{
@@ -49,7 +49,7 @@ function Modal(props: ModalProps): JSX.Element {
 			<div data-testid="modal" className="modal"
 				style={{
 					verticalAlign: modalAlign ? modalAlign : "middle",
-					maxWidth: modalMaxWidth ? modalMaxWidth : "500px",
+					minWidth: modalMinWidth ? modalMinWidth : "",
 					background: modalBackground ? modalBackground : "#FFF",
 					borderRadius: modalRadius ? modalRadius : "8px",
 					boxShadow: modalShadow ? modalShadow : "0 0 10px #000"

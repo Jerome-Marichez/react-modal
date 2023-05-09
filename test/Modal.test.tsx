@@ -20,7 +20,7 @@ describe('Modal Tests', () => {
 
 		const modalAlign = "top";
 		const modalBackground = "rgba(25, 25, 25, 0.75)";
-		const modalMaxWidth = "700px";
+		const modalMinWidth = "700px";
 		const modalRadius = "5px";
 		const modalShadow = "0 0 30px #000"
 		const background = "grey";
@@ -32,7 +32,7 @@ describe('Modal Tests', () => {
 				background={background}
 				modalAlign={modalAlign}
 				modalBackground={modalBackground}
-				modalMaxWidth={modalMaxWidth}
+				modalMinWidth={modalMinWidth}
 				modalRadius={modalRadius}
 				modalShadow={modalShadow}
 			/>
@@ -45,7 +45,7 @@ describe('Modal Tests', () => {
 		const myModal = screen.getByTestId("modal");
 		const style = getComputedStyle(myModal);
 		expect(style.verticalAlign === modalAlign).toBeTruthy();
-		expect(style.maxWidth === modalMaxWidth).toBeTruthy();
+		expect(style.minWidth === modalMinWidth).toBeTruthy();
 		expect(style.background === modalBackground).toBeTruthy();
 		expect(style.borderRadius === modalRadius).toBeTruthy();
 		expect(style.boxShadow === modalShadow).toBeTruthy();
